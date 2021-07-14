@@ -5,6 +5,8 @@ Hospedado na Vercel.
 
 LINK:
 
+https://teste-linx.vercel.app/
+
 
 
 Inicio da criação da estrtura da landingPage.
