@@ -1,5 +1,5 @@
 # Teste-Linx
-Criação de landingPage.
+Criação de landingPage. (em desenvolvimento)
 
 Hospedado na Vercel.
 
@@ -7,4 +7,4 @@ LINK:
 
 
 
-Criação da estrtura da landingPage onde foi 
+Inicio da criação da estrtura da landingPage.
