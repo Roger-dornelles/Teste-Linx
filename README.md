@@ -9,4 +9,4 @@ https://teste-linx.vercel.app/
 
 
 
-Inicio da criação da estrtura da landingPage.
+Inicio da criação da estrutura da landingPage.
