@@ -31,11 +31,12 @@ section{
 }
 
 .warning{
-    width:100%;
-    justify-content:center;
-    align-items:center;
-    background-color: #ffff0f;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ff5050;
     color: black;
+    margin-top: 1px;
+
 }
 
 /* Estilos do cabeçalho*/
@@ -58,6 +59,8 @@ header{
     }
     
     .menu{
+        width:100%;
+        margin: 0 auto;
         margin-top:40px;
         padding-bottom: 20px;
         
@@ -88,7 +91,51 @@ header{
             }
         }
     }
-    .mobile{ display:none;}
+    .mobile{
+        display:none;
+        justify-content:space-between;
+        width:100%;
+        flex-wrap: wrap;
+        margin-top:20px;
+        margin-bottom: 20px;
+
+        
+        ul{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:0 5px;
+            list-style: none;
+            display:flex;
+            flex-wrap: wrap;
+            
+            
+            li{
+                background-color:#FFFFFF;
+                width:140px;
+                height:50px;
+                margin: 20px;
+                padding: 10px ;
+                padding:9px 0;
+                border-radius: 4px;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                -ms-border-radius: 4px;
+                -o-border-radius: 4px;
+                cursor: pointer;
+
+                a{
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    border: none;
+                    color: #888888;
+                    
+                }
+            }
+        }
+    }
 }
 
 /* section help */
@@ -140,6 +187,10 @@ header{
                     -o-border-radius: 3px;
                     font-size:18px;
                     padding-left: 12px;
+                }
+                .warning{
+                    display:none;
+                
                 }
             }
             .checkbox{
@@ -205,13 +256,13 @@ header{
 
     .container{
         width:100%;
-        display:none;
+        display:flex;
         justify-content:space-between;
         flex-wrap: wrap;
         
         
         .card{
-            display:none;
+            display:flex;
             width:200px;
             flex-direction: column;
             margin-bottom: 40px;
@@ -223,7 +274,7 @@ header{
             }
 
             .description{ 
-                display:none;
+                display:flex;
                 flex-direction: column;
                 span{
                     margin-bottom: 12px;
@@ -261,35 +312,6 @@ header{
     }
 }
 
-/* section novidade*/
-.share-news{
-    width:100%;
-    margin: 0 auto;
-    margin-top: 70px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
- 
-
-    &::before{
-        content: '';
-        flex: 1;
-        height:2px;
-        background-color: #a8a8b3;
-        margin-right: 16px;
-        
-    }
-    
-    &::after{
-        content: '';
-        flex: 1;
-        height:2px;
-        background-color: #a8a8b3;
-        margin-left: 16px;
-        
-    }
-
-}
 
 /* section share-info*/
 .share-info{
@@ -299,25 +321,43 @@ header{
     justify-content:center;
     flex-direction: column;
     margin-top: 50px;
-
-    .warning{
-        display: none;
-
-        margin: 0 auto;
-        text-align: center;
-        background-color: #ff5050;
-        color: black;
-        margin-top: 1px;
-
+    .share-news{
+        width:100%;
+        margin: 70px auto;
+       
+        display:flex;
+        align-items: center;
+        justify-content: center;
+     
+    
+        &::before{
+            content: '';
+            flex: 1;
+            height:2px;
+            background-color: #a8a8b3;
+            margin-right: 16px;
+            
+        }
+        
+        &::after{
+            content: '';
+            flex: 1;
+            height:2px;
+            background-color: #a8a8b3;
+            margin-left: 16px;
+            
+        }
+    
     }
     
     .notify-friend{
         margin-top: 40px;
 
-        form{
+        .form{
 
             display:flex;
             justify-content:space-between;
+
             
             label{
                    
@@ -329,6 +369,12 @@ header{
                     padding-left: 12px;
                     font-size: 16px;
                 }
+                .warning{
+                    display: none;
+                    justify-content: center;
+                
+                }
+                
             }
 
             
@@ -383,40 +429,7 @@ footer{
         .menu{ display:none;}
 
         .mobile{
-            display:flex;
-            justify-content:space-between;
-            width:100%;
-            flex-wrap: wrap;
-            margin-top:20px;
-            margin-bottom: 20px;
-
-            
-            ul{
-                display:flex;
-                justify-content:center;
-                align-items:center;
-                padding:0 5px;
-                list-style: none;
-                display:flex;
-                flex-wrap: wrap;
-                
-                
-                li{
-                    
-                    width:140px;
-                    height:50px;
-                    margin: 20px;
-                    padding: 10px ;
-                    padding:9px 0;
-    
-                    a{
-                        display:flex;
-                        flex-wrap: wrap;
-                        padding: 5px;
-                        
-                    }
-                }
-            }
+           display: flex;
         }
     }
 
@@ -466,20 +479,20 @@ footer{
                 display:flex;
                 flex-direction:row;
                 justify-content:auto;
-                width:100%;
+                width:90%;
                 margin-bottom: 40px;
  
         
                 img{
-                    width: 60%;
+                    width: 50%;
                     height:190px;
-                    margin-bottom:12px;
+                    margin-bottom:17px;
                 }
 
                 .description{ 
                     display:flex;
                     flex-direction: column;
-
+                    margin-left: 12px;;
                     span{
                         margin-bottom: 12px;
                     }
@@ -521,8 +534,8 @@ footer{
         .notify-friend{
             margin-top: 40px;
     
-            form{
-    
+            .form{
+                flex-wrap: wrap;
                 display:flex;
                 flex-direction: column;
                 
