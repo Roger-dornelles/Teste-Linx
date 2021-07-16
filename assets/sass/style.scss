@@ -30,6 +30,14 @@ section{
     padding: 7px;
 }
 
+.warning{
+    width:100%;
+    justify-content:center;
+    align-items:center;
+    background-color: #ffff0f;
+    color: black;
+}
+
 /* Estilos do cabeçalho*/
 
 header{
@@ -167,9 +175,6 @@ header{
     justify-content:center;
     align-items:center;
 
-    h3{
-
-    }
     &::before{
         content: '';
         flex: 1;
@@ -200,13 +205,13 @@ header{
 
     .container{
         width:100%;
-        display:flex;
+        display:none;
         justify-content:space-between;
         flex-wrap: wrap;
         
         
         .card{
-            display:flex;
+            display:none;
             width:200px;
             flex-direction: column;
             margin-bottom: 40px;
@@ -218,7 +223,7 @@ header{
             }
 
             .description{ 
-                display:flex;
+                display:none;
                 flex-direction: column;
                 span{
                     margin-bottom: 12px;
@@ -294,6 +299,17 @@ header{
     justify-content:center;
     flex-direction: column;
     margin-top: 50px;
+
+    .warning{
+        display: none;
+
+        margin: 0 auto;
+        text-align: center;
+        background-color: #ff5050;
+        color: black;
+        margin-top: 1px;
+
+    }
     
     .notify-friend{
         margin-top: 40px;
@@ -304,7 +320,7 @@ header{
             justify-content:space-between;
             
             label{
-
+                   
                 input{
                     width:420px;
                     height:35px;
@@ -347,7 +363,7 @@ footer{
     section{
         max-width:100%;
         margin:0 auto;
-        color: #888888;
+
     }
 
     header{
@@ -356,7 +372,6 @@ footer{
         justify-content:center;
         align-items:center;
         flex-direction:column;
-        background-color:#707070;
         text-align:center;
     
         
@@ -364,7 +379,6 @@ footer{
             margin-top:30px;
             line-height:45px;
             text-align:center;
-            color:#FFFFFF;
         }
         .menu{ display:none;}
 
@@ -393,21 +407,11 @@ footer{
                     height:50px;
                     margin: 20px;
                     padding: 10px ;
-                    background-color:#FFFFFF;
                     padding:9px 0;
-                    border-radius: 4px;
-                    -webkit-border-radius: 4px;
-                    -moz-border-radius: 4px;
-                    -ms-border-radius: 4px;
-                    -o-border-radius: 4px;
-                    cursor: pointer;
-    
     
                     a{
                         display:flex;
                         flex-wrap: wrap;
-                        text-decoration:none;
-                        color: #888888;
                         padding: 5px;
                         
                     }
@@ -489,14 +493,7 @@ footer{
                     }
     
                     .btn{
-                        background-color: #FFFFFF;
-                        color: #888888;
                         width:100%;
-                        font-size: 16px;
-                        cursor:pointer;
-                        border-radius: 4px;
-                        outline:none;
-                        border:1px solid #707070;
                         padding: 7px;
                     }
                 }
@@ -583,22 +580,11 @@ footer{
                     width:190px;
                     height:50px;
                     margin: 20px;
-                    padding: 10px ;
-                    background-color:#FFFFFF;
                     padding:9px 0;
-                    border-radius: 4px;
-                    -webkit-border-radius: 4px;
-                    -moz-border-radius: 4px;
-                    -ms-border-radius: 4px;
-                    -o-border-radius: 4px;
-                    cursor: pointer;
-    
-    
+                
                     a{
                         display:flex;
                         flex-wrap: wrap;
-                        text-decoration:none;
-                        color: #888888;
                         padding: 5px;
                     }
                 }
@@ -629,22 +615,13 @@ footer{
                     width:150px;
                     height:50px;
                     margin: 20px;
-                    padding: 10px ;
-                    background-color:#FFFFFF;
                     padding:3px 0;
-                    border-radius: 4px;
-                    -webkit-border-radius: 4px;
-                    -moz-border-radius: 4px;
-                    -ms-border-radius: 4px;
-                    -o-border-radius: 4px;
-                    cursor: pointer;
-    
     
                     a{
                         display:flex;
                         flex-wrap: wrap;
                         text-decoration:none;
-                        color: #888888;
+
 
                     }
                 }
@@ -652,12 +629,10 @@ footer{
         }
     }
     footer{
-        background-color:#707070;
         display:block;
         margin:0 auto;
         text-align:center;
         margin-top: 50px;
-        color: #FFFFFF;
         padding:70px 10px;
     
         p{
@@ -730,6 +705,7 @@ footer{
     }
     
 }
+
 @media screen and (max-width:330px){
 
     header{

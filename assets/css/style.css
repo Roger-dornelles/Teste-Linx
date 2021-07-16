@@ -8,6 +8,8 @@ section { max-width: 930px; margin: 0 auto; color: #888888; }
 
 .btn { background-color: #FFFFFF; color: #888888; width: 100%; font-size: 16px; cursor: pointer; border-radius: 4px; outline: none; border: 1px solid #707070; padding: 7px; }
 
+.warning { width: 100%; justify-content: center; align-items: center; background-color: #ffff0f; color: black; }
+
 /* Estilos do cabeçalho*/
 header { width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: #707070; text-align: center; }
 header .text { margin-top: 30px; line-height: 45px; text-align: center; color: #FFFFFF; }
@@ -35,10 +37,10 @@ header .mobile { display: none; }
 
 /* section card-product*/
 .card-product { width: 100%; margin-top: 70px; display: flex; flex-direction: column; align-items: center; color: #888888; }
-.card-product .container { width: 100%; display: flex; justify-content: space-between; flex-wrap: wrap; }
-.card-product .container .card { display: flex; width: 200px; flex-direction: column; margin-bottom: 40px; }
+.card-product .container { width: 100%; display: none; justify-content: space-between; flex-wrap: wrap; }
+.card-product .container .card { display: none; width: 200px; flex-direction: column; margin-bottom: 40px; }
 .card-product .container .card img { width: 200px; height: 150px; margin-bottom: 12px; }
-.card-product .container .card .description { display: flex; flex-direction: column; }
+.card-product .container .card .description { display: none; flex-direction: column; }
 .card-product .container .card .description span { margin-bottom: 12px; }
 .card-product .container .card .description p { margin-bottom: 12px; }
 .card-product .container .card .description strong { margin-bottom: 12px; }
@@ -52,6 +54,7 @@ header .mobile { display: none; }
 
 /* section share-info*/
 .share-info { margin: 0 auto; display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 50px; }
+.share-info .warning { display: none; margin: 0 auto; text-align: center; background-color: #ff5050; color: black; margin-top: 1px; }
 .share-info .notify-friend { margin-top: 40px; }
 .share-info .notify-friend form { display: flex; justify-content: space-between; }
 .share-info .notify-friend form label input { width: 420px; height: 35px; margin: 0 auto; outline: none; padding-left: 12px; font-size: 16px; }
@@ -60,14 +63,14 @@ header .mobile { display: none; }
 footer { background-color: #707070; display: flex; align-items: center; flex-direction: column; margin-top: 50px; color: #FFFFFF; padding: 70px 0; }
 footer p { margin-bottom: 10px; }
 
-@media screen and (max-width: 930px) { section { max-width: 100%; margin: 0 auto; color: #888888; }
-  header { width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: #707070; text-align: center; }
-  header .text { margin-top: 30px; line-height: 45px; text-align: center; color: #FFFFFF; }
+@media screen and (max-width: 930px) { section { max-width: 100%; margin: 0 auto; }
+  header { width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center; }
+  header .text { margin-top: 30px; line-height: 45px; text-align: center; }
   header .menu { display: none; }
   header .mobile { display: flex; justify-content: space-between; width: 100%; flex-wrap: wrap; margin-top: 20px; margin-bottom: 20px; }
   header .mobile ul { display: flex; justify-content: center; align-items: center; padding: 0 5px; list-style: none; display: flex; flex-wrap: wrap; }
-  header .mobile ul li { width: 140px; height: 50px; margin: 20px; padding: 10px; background-color: #FFFFFF; padding: 9px 0; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; cursor: pointer; }
-  header .mobile ul li a { display: flex; flex-wrap: wrap; text-decoration: none; color: #888888; padding: 5px; }
+  header .mobile ul li { width: 140px; height: 50px; margin: 20px; padding: 10px; padding: 9px 0; }
+  header .mobile ul li a { display: flex; flex-wrap: wrap; padding: 5px; }
   .help { max-width: 100%; display: flex; flex-direction: column; align-items: center; }
   .help .help-algoritmo { width: 90%; }
   .help .form { width: 90%; display: flex; flex-direction: column; align-items: center; }
@@ -80,7 +83,7 @@ footer p { margin-bottom: 10px; }
   .card-product .container .card .description span { margin-bottom: 12px; }
   .card-product .container .card .description p { margin-bottom: 12px; }
   .card-product .container .card .description strong { margin-bottom: 12px; }
-  .card-product .container .card .description .btn { background-color: #FFFFFF; color: #888888; width: 100%; font-size: 16px; cursor: pointer; border-radius: 4px; outline: none; border: 1px solid #707070; padding: 7px; }
+  .card-product .container .card .description .btn { width: 100%; padding: 7px; }
   .card-product .products button { display: block; margin: 0 auto; width: 80%; }
   .share-info { margin: 0 auto; display: block; width: 90%; margin-top: 50px; }
   .share-info .notify-friend { margin-top: 40px; }
@@ -89,13 +92,13 @@ footer p { margin-bottom: 10px; }
   .share-info .notify-friend .btn { margin: 0 auto; display: block; margin-top: 35px; width: 50%; } }
 @media (max-width: 768px) { header .mobile { display: flex; justify-content: space-between; width: 90%; flex-wrap: wrap; margin-top: 20px; margin-bottom: 20px; }
   header .mobile ul { display: flex; justify-content: center; align-items: center; padding: 0 5px; list-style: none; display: flex; flex-wrap: wrap; }
-  header .mobile ul li { width: 190px; height: 50px; margin: 20px; padding: 10px; background-color: #FFFFFF; padding: 9px 0; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; cursor: pointer; }
-  header .mobile ul li a { display: flex; flex-wrap: wrap; text-decoration: none; color: #888888; padding: 5px; } }
+  header .mobile ul li { width: 190px; height: 50px; margin: 20px; padding: 9px 0; }
+  header .mobile ul li a { display: flex; flex-wrap: wrap; padding: 5px; } }
 @media screen and (max-width: 633px) { header .mobile { width: 90%; flex-wrap: wrap; }
   header .mobile ul { display: flex; padding: 0 5px; list-style: none; display: flex; flex-wrap: wrap; }
-  header .mobile ul li { width: 150px; height: 50px; margin: 20px; padding: 10px; background-color: #FFFFFF; padding: 3px 0; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; cursor: pointer; }
-  header .mobile ul li a { display: flex; flex-wrap: wrap; text-decoration: none; color: #888888; }
-  footer { background-color: #707070; display: block; margin: 0 auto; text-align: center; margin-top: 50px; color: #FFFFFF; padding: 70px 10px; }
+  header .mobile ul li { width: 150px; height: 50px; margin: 20px; padding: 3px 0; }
+  header .mobile ul li a { display: flex; flex-wrap: wrap; text-decoration: none; }
+  footer { display: block; margin: 0 auto; text-align: center; margin-top: 50px; padding: 70px 10px; }
   footer p { margin-bottom: 10px; } }
 @media screen and (max-width: 540px) { header .mobile { width: 100%; flex-wrap: wrap; }
   header .mobile ul { display: flex; padding: 0 5px; list-style: none; display: flex; flex-wrap: wrap; }

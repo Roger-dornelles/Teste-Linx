@@ -42,15 +42,15 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacinia massa at mauris finibus feugiat. Nam varius faucibus tortor, in molestie sapien posuere eu. Nunc malesuada vulputate blandit. Vestibulum tempus fringilla nulla, vel dignissim neque blandit nec. Aliquam laoreet maximus efficitur.</p>
         </div>
         <div class="form">
-            <form>
-                <label>Seu nome:<br><input type="text"></label>
-                <label>E-mail:<input type="email"></label>
-                <label>Cpf:<input type="text"></label>
+            <form name='form1'>
+                <label>Seu nome:<br><input type="text" required></label>
+                <label>E-mail:<input type="email" required></label>
+                <label>Cpf:<input type="text" required></label>
                 <div class="checkbox">
-                    <input type="checkbox">Masculino</input>
-                    <input type="checkbox">Feminino</input>
+                    <input type="radio" name="option" value="masculino">Masculino</input>
+                    <input type="radio"  name="option" value="feminino">Feminino</input>
                 </div>
-                <button type="submit">Enviar</button>
+                <button type="submit" >Enviar</button>
             </form>
         </div>
     </section>
@@ -59,66 +59,20 @@
         <h3>Sua seleção especial</h3>
     </section>
 
+    <div class="card">
+        <img id="img" src="" alt="Foto do Produto">
+        <div class="description">
+            <span id="name"></span>
+            <p id="description"></p>
+            <span id="oldPrice"></span>
+            <strong id="price"></strong>
+            <span id="division"></span>
+            <button class="btn">Comprar</button>
+        </div>
+    </div> 
     
     <section class="card-product">
         <div class="container">
-
-            <div class="card">
-                <img src="" alt="">
-                <div class="description">
-                    <span>Nome do produto</span>
-                    <p>descrição do produto</p>
-                    <span>De R$ 19,90</span>
-                    <strong>Por R$ 15,80</strong>
-                    <span>ou 2x de R$ 7,90</span>
-                    <button class="btn">Comprar</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="" alt="">
-                <div class="description">
-                    <span>Nome do produto</span>
-                    <p>descrição do produto</p>
-                    <span>De R$ 19,90</span>
-                    <strong>Por R$ 15,80</strong>
-                    <span>ou 2x de R$ 7,90</span>
-                    <button class="btn">Comprar</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="" alt="">
-                <div class="description">
-                    <span>Nome do produto</span>
-                    <p>descrição do produto</p>
-                    <span>De R$ 19,90</span>
-                    <strong>Por R$ 15,80</strong>
-                    <span>ou 2x de R$ 7,90</span>
-                    <button class="btn">Comprar</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="" alt="">
-                <div class="description">
-                    <span>Nome do produto</span>
-                    <p>descrição do produto</p>
-                    <span>De R$ 19,90</span>
-                    <strong>Por R$ 15,80</strong>
-                    <span>ou 2x de R$ 7,90</span>
-                    <button class="btn">Comprar</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="" alt="">
-                <div class="description">
-                    <span>Nome do produto</span>
-                    <p>descrição do produto</p>
-                    <span>De R$ 19,90</span>
-                    <strong>Por R$ 15,80</strong>
-                    <span>ou 2x de R$ 7,90</span>
-                    <button class="btn">Comprar</button>
-                </div>
-            </div>
-            
         </div>
 
         <div class="products">
@@ -135,17 +89,19 @@
         <p>Quer que seus amigos tambem ganhem a lista personalizada deles? Preencha agora! </p>
 
         <div class="notify-friend">
+        
             <form action="">
                 <label>Nome do seu amigo
-                    <input type="text">
+                    <input type="text" id="name" required>
+                    
                 </label>
                 <label>E-mail
-                    <input type="email">
+                    <input type="email" id="email">
+                    <div class="warning">E-mail Invalido.</div>
                 </label>
                 
-                
             </form>
-            <button type="submit" class="btn">Enviar agora</button>
+            <button type="submit" class="btn" onclick="validator()">Enviar agora</button>
         </div>
     </section>
 
@@ -154,5 +110,7 @@
         <p>Linx impulse</p>
         <p>2019</p>
     </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
